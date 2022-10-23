@@ -8,8 +8,5 @@ export default defineNuxtConfig({
       router.push(...routes);
     },
   },
-  modules: [
-    // ...
-    "@pinia/nuxt",
-  ],
+  modules: ["@pinia/nuxt", "@nuxtjs/tailwindcss"],
 });
