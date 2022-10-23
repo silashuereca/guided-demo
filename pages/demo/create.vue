@@ -1,10 +1,10 @@
 <template>
-  <div> About Page </div>
+  <DemoWrapper />
 </template>
 
-<script>
+<script lang="ts">
 import { definePageMeta } from "#imports";
 definePageMeta({
-  layout: "custom",
+  layout: "demo",
 });
 </script>
