@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute top-0 left-0 w-full flex items-center justify-center py-5 shadow-sm">
+  <div class="absolute top-0 left-0 w-full flex items-center justify-center py-5 shadow-sm z-10">
     <div class="flex items-center">
       <NuxtLink :to="{ name: 'demo-create', query: { mode: 'build' } }" :class="[highlightMode('build')]">
         Build Mode
@@ -32,11 +32,11 @@ export default defineComponent({
 
     function highlightMode(value: string): string {
       if (route?.query.mode === value) {
-        return "text-blue-500";
+        return "text-indigo-500";
       }
 
       if (route?.query.mode === value) {
-        return "text-blue-500";
+        return "text-indigo-500";
       }
 
       return "text-gray-600";
