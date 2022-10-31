@@ -1,5 +1,10 @@
 <template>
-  <div class="absolute top-0 left-0 w-full flex items-center justify-center py-5 shadow-sm z-10">
+  <div class="absolute top-0 left-0 w-full grid grid-cols-1 md:grid-cols-3 justify-center py-5 shadow-sm z-10">
+    <div class="px-5">
+      <p class="font-medium text-lg">
+        Title Of the Demo Goes Here
+      </p>
+    </div>
     <div class="flex items-center">
       <NuxtLink :to="{ name: 'demo-create', query: { mode: 'build' } }" :class="[highlightMode('build')]">
         Build Mode
