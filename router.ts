@@ -10,12 +10,7 @@ export const routes = [
   },
   {
     path: "/demo",
-    name: "demo-home",
-    file: resolve(__dirname, "./pages/demo/home.vue"),
-  },
-  {
-    path: "/demo/create",
     name: "demo-create",
-    file: resolve(__dirname, "./pages/demo/create.vue"),
+    file: resolve(__dirname, "./pages/demo.vue"),
   },
 ];
